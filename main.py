@@ -90,5 +90,7 @@ if __name__=="__main__":
                 break
             eval_bf(code)
     else:
-        print("Files are not yet supported!")
+        with open(argv[1],'r') as f:
+            file = f.read()
+        eval_bf(file)
         
